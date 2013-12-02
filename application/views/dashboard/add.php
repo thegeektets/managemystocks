@@ -133,6 +133,7 @@
                                 <div class="control-group">
                                     <label class="control-label">Stock Name</label>
                                     <div class="controls">
+<<<<<<< HEAD
                                         <select name="stock" type="text" placeholder="stock" class="input-xxlarge">
                                         <?php $n =0 ;
                                         while($n<count($stocks)){
@@ -142,6 +143,10 @@
                                         }?>
                                         </select>
                                          <span class="help-inline"><?php echo form_error('stock') ; ?></span>
+=======
+                                        <input type="text" placeholder="stock" class="input-xxlarge"  name ="stock" value="<?php echo set_value('stock'); ?>"/>
+                                        <span class="help-inline"><?php echo form_error('stock') ; ?></span>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
                                     </div>
                                 </div>
                                  <div class="control-group">

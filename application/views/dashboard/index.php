@@ -63,7 +63,11 @@
                            <ul class="dropdown-menu extended logout">
                                <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
                                <li><a href="#"><i class="icon-cog"></i> My Settings</a></li>
+<<<<<<< HEAD
                                <li><a href="logout"><i class="icon-key"></i> Log Out</a></li>
+=======
+                               <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
                            </ul>
                        </li>
                        <!-- END USER LOGIN DROPDOWN -->
@@ -124,10 +128,14 @@
                    </h3>
                    <ul class="breadcrumb">
                        <li class="active">
+<<<<<<< HEAD
                            Stocks that you hold shares : Market State :<?php 
                            date_default_timezone_set('Africa/Nairobi');
                            $date = date('m/d/Y h:i:s a', time());
                            echo $date; ?>
+=======
+                           Dashboard
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
                        </li>
                        <li class="pull-right search-wrap">
                            <form action="http://thevectorlab.net/metrolab/search_result.html" class="hidden-phone">
@@ -149,15 +157,25 @@
            while($n < count($mystocks)){
            	
            	$stock  = $mystocks[$n]['stock'] ;
+<<<<<<< HEAD
            	 
              $v = 0 ;
+=======
+           	
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
            	for($i=0 ;$i<count($stocks);$i++){
         
            		if((strcmp(trim($stock),trim($stocks[$i])))==0){
            			
+<<<<<<< HEAD
 					$ind[$n] = $v;           			
    				 }
                 $v++;
+=======
+					$ind[$n] = $i;           			
+   				 }
+
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
            	} 
            	$n++;
 	}
@@ -177,25 +195,41 @@
                     </div>
                      <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="#">
+<<<<<<< HEAD
                             <div class="info"><?php echo $yesterday[$n] ?></div>
+=======
+                            <div class="info"><?php echo $yesterday[$k] ?></div>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
                             <div class="status">Yesterday</div>
                         </a>
                     </div>
                      <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="#">
+<<<<<<< HEAD
                             <div class="info"><?php echo $today[$n] ?></div>
+=======
+                            <div class="info"><?php echo $today[$k] ?></div>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
                             <div class="status">Today</div>
                         </a>
                     </div>
                     <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="#">
+<<<<<<< HEAD
                             <div class="info"><?php echo $high[$n] ?></div>
+=======
+                            <div class="info"><?php echo $high[$k] ?></div>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
                             <div class="status">High</div>
                         </a>
                     </div>
                      <div class="metro-nav-block nav-block-grey ">
                         <a data-original-title="" href="#">
+<<<<<<< HEAD
                             <div class="info"><?php echo $low[$n] ?></div>
+=======
+                            <div class="info"><?php echo $low[$k] ?></div>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
                             <div class="status">Low</div>
                         </a>
                     </div>
@@ -225,7 +259,11 @@
 
    <!-- BEGIN FOOTER -->
    <div id="footer">
+<<<<<<< HEAD
        2013 &copy; <a href ="<?php echo base_url() ?>">Manage My Stocks</a>
+=======
+       2013 &copy; Manage My Stocks
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
    </div>
    <!-- END FOOTER -->
 

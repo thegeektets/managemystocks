@@ -72,6 +72,7 @@
                 <input type="checkbox" id=""> Remember Me
             </div>
             <div class="forgot-hint pull-right">
+<<<<<<< HEAD
                 <a id="forget-password" class="" href="javascript:;">Don't have and account?<a href="<?php echo base_url("index.php/users/register")?>">Register</a></a>
             </div>
         </div>
@@ -79,6 +80,12 @@
      <div id="footer">
        2013 &copy; <a href ="<?php echo base_url() ?>">Manage My Stocks</a>
    </div>
+=======
+                <a id="forget-password" class="" href="javascript:;">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
 </body>
 <!-- END BODY -->
 </html>
