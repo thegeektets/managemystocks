@@ -168,6 +168,7 @@ function addstock(){
 
   }
 
+<<<<<<< HEAD:application/controllers/users.php~
   public function scrape() 
 {
      //a lot happens here
@@ -175,9 +176,15 @@ function addstock(){
 
   public function delimiter($string)
   {
-  //delimiting happens here
+      $delimited = preg_split("/[\s\n\t\r][0-9]{1,2}[\s\n\t\r]/", $string);
+      $n= 0;
+      return $delimited;
+
   }
   
+=======
+
+>>>>>>> fb4e9442fc9cd36b7e4a6f24fb1219cfe294d74e:application/controllers/users.php
      
 
   public function value($string)
