@@ -166,51 +166,7 @@ function addstock(){
 
   }
 
-  public function scrape() 
-{
-       $ch = curl_init();
 
-        //get contents from the nelly data 
-      $html = file_get_contents( "http://localhost/live");
-        // $html = file_get_contents( "http://www.nellydata.com/CapitalFM/livedata.asp");  
-        //declare new dom document
-      $dom = new DOMDocument();
-
-      libxml_use_internal_errors(TRUE); //disable libxml errors
-             //if any html is actually returned
-    if(!empty($html))
-    {   
-             //load html to dom
-            $dom->loadHTML($html);
-             //remove errors for yucky html
-            libxml_clear_errors(); 
-            $dom_xpath = new DOMXPath($dom);
-             //get the whole table
-            $dom_table = $dom_xpath->query('//table');
-             //$dom_rows = $dom->find("table#data tr");
-        
-
-       if($dom_table->length > 0)
-       {
-         $n = 0 ;
-         foreach($dom_table as $dom_row)
-         {
-           $table[$n] =  $dom_row->nodeValue;
-          }
-        }
-
-      }
-        return $table ;
-      }
-
-  public function delimiter($string)
-  {
-      $delimited = preg_split("/[\s\n\t\r][0-9]{1,2}[\s\n\t\r]/", $string);
-      $n= 0;
-      return $delimited;
-
-  }
-  
      
 
   public function value($string)
