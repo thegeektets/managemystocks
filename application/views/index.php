@@ -334,7 +334,7 @@
                     <header class="parallax-header">
                         <h2 class="parallax-title"><span>Our Promise</span></h2><br>
                          <div class="hero-title-holder parallax-slogan">
-                         We promise to always provide relevant,  <span>Upto date </span>on your stock market shares
+                         We promise to always provide relevant, <span>Upto date </span>information on your stock market shares
 
                          </div>
                     </header>

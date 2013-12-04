@@ -1773,20 +1773,20 @@ ul.item-list .pull-right span {
     display: block;
     float: left;
     font-weight: 300;
-    height: 120px;
+    height: 100px;
     letter-spacing: 0.02em;
     line-height: 20px;
     margin: 0 1% 1% 0;
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    width: 120px !important;
+    width: 100px !important;
     z-index: 1;
 }
 
 
 .metro-nav .metro-nav-block.double {
-    width: 28%;
+    width: 19%;
 }
 
 .metro-nav .metro-nav-block {
@@ -1795,14 +1795,14 @@ ul.item-list .pull-right span {
     display: block;
     float: left;
     font-weight: 300;
-    height:114px;
+    height:90px;
     letter-spacing: 0.02em;
     line-height: 20px;
     margin: 0 1% 1% 0;
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    width: 17%;
+    width: 15%;
     z-index: 1;
 }
 
