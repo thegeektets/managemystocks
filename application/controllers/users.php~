@@ -106,7 +106,7 @@
 
     if ($this->form_validation->run() == FALSE){
  
-    $this->load->view('register');
+    $this->load->view('dashboard/register');
     }
     else {
      $data['success']= ("Registration success") ;
@@ -147,13 +147,15 @@ function addstock(){
 
    if ($this->form_validation->run() == FALSE){
      $this->load->library('session');
+     $data['stocks']= $this->stocks();
      $data['profile'] = $this->users_model->get_user($this->session->userdata('username'));
-     $data['success'] =("Stock Update Failed"); 
+     $data['success'] =(""); 
       $this->load->view('dashboard/add' ,$data);
     }
     else {
      $this->load->library('session');
-      $this->users_model->addstock();
+     $this->users_model->addstock();
+     $data['stocks']= $this->stocks();
      $data['profile'] = $this->users_model->get_user($this->session->userdata('username'));
      $data['success'] =("Stock Update success"); 
      $this->load->view('dashboard/add' ,$data);
@@ -168,39 +170,7 @@ function addstock(){
 
   public function scrape() 
 {
-       $ch = curl_init();
-
-        //get contents from the nelly data 
-      $html = file_get_contents( "http://localhost/live");
-        // $html = file_get_contents( "http://www.nellydata.com/CapitalFM/livedata.asp");  
-        //declare new dom document
-      $dom = new DOMDocument();
-
-      libxml_use_internal_errors(TRUE); //disable libxml errors
-             //if any html is actually returned
-    if(!empty($html))
-    {   
-             //load html to dom
-            $dom->loadHTML($html);
-             //remove errors for yucky html
-            libxml_clear_errors(); 
-            $dom_xpath = new DOMXPath($dom);
-             //get the whole table
-            $dom_table = $dom_xpath->query('//table');
-             //$dom_rows = $dom->find("table#data tr");
-        
-
-       if($dom_table->length > 0)
-       {
-         $n = 0 ;
-         foreach($dom_table as $dom_row)
-         {
-           $table[$n] =  $dom_row->nodeValue;
-          }
-        }
-
-      }
-        return $table ;
+     //a lot happens here
       }
 
   public function delimiter($string)
