@@ -4,6 +4,7 @@ class users_model extends CI_Model {
     public function __construct(){
     $this->load->database();     }
 
+<<<<<<< HEAD
 	
         //this is a cron job function
 	public function cron($data=array()){
@@ -38,10 +39,26 @@ class users_model extends CI_Model {
 	}
    
    
+=======
+ 
+ 
+ 
+ 	public function getmystock($username){
+ 	
+ 	$query = $this->db->query("select * from mystocks where username = '".$username."'");
+    return $query->result_array();
+}
+	
+
+ 	
+
+ 
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
     public function get_user($username){
     $query = $this->db->query("select * from user where username = '".$username."'");
     return $query->result_array();}
 
+<<<<<<< HEAD
     public function check_user($username){
        $query = $this->db->query("select username from user where username = '".$username ."'");
                 foreach ($query->result() as $row)
@@ -52,6 +69,11 @@ class users_model extends CI_Model {
 
    
    public function registeruser() {
+=======
+
+   
+    function registeruser() {
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
         $username = $this->input->post("username");
         $password = $this->input->post("password");
         $password = md5($password);
@@ -67,15 +89,23 @@ class users_model extends CI_Model {
         $stock = $this->input->post("stock");
         $value = $this->input->post("value");
         $shares = $this->input->post("shares");
+<<<<<<< HEAD
         $date =  $this->input->post("date");
+=======
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                 
 
 
         $this->load->library('session');
         $user =$this->session->userdata('username');
             
+<<<<<<< HEAD
             $sql = "INSERT INTO mystocks (username,stock ,value ,shares,date) " .
             "VALUES (" . $this->db->escape($user) . ",".$this->db->escape($stock) . ",".$this->db->escape($value) . ",".$this->db->escape($shares) .",".$this->db->escape($date) .")";
+=======
+            $sql = "INSERT INTO mystocks (username,stock ,value ,shares) " .
+            "VALUES (" . $this->db->escape($user) . ",".$this->db->escape($stock) . ",".$this->db->escape($value) . ",".$this->db->escape($shares) .")";
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
             $this->db->query($sql);
       }
     

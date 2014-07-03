@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<<<<<<< HEAD
 <?php error_reporting(0) ;
 $p = 0;
 //create a new array
@@ -23,6 +24,14 @@ $p++;
    <title>Your Stock Settings|Track Your Shares</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
+=======
+<head>
+   <meta charset="utf-8" />
+   <title>My Stocks | Manage My Stocks</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="Mosaddek" name="author" />
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
    <link href="<?php $this->load->helper('url'); echo base_url("assets/dashboard/assets/bootstrap/css/bootstrap.min.css")?>" rel="stylesheet" />
    <link href="<?php echo base_url("assets/dashboard/assets/bootstrap/css/bootstrap-responsive.min.css")?>" rel="stylesheet" />
    <link href="<?php echo base_url("assets/dashboard/assets/bootstrap/css/bootstrap-fileupload.css")?>" rel="stylesheet" />
@@ -32,8 +41,11 @@ $p++;
    <link href="<?php echo base_url("assets/dashboard/css/style-default.css")?>" rel="stylesheet" id="style_color" />
    <link href="<?php echo base_url("assets/dashboard/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css")?>" rel="stylesheet" />
    <link href="<?php echo base_url("assets/dashboard/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css")?>" rel="stylesheet" type="text/css" media="screen"/>
+<<<<<<< HEAD
  <link rel="shortcut icon" href="<?php echo base_url("assets/blue/images/favicon.ico")?>">
    
+=======
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -45,10 +57,21 @@ $p++;
            <div class="container-fluid">
                <!--BEGIN SIDEBAR TOGGLE-->
                <div class="sidebar-toggle-box hidden-phone">
+<<<<<<< HEAD
                    <div  data-placement="right" data-original-title="Toggle Navigation"></div>
                </div>
                <!--END SIDEBAR TOGGLE-->
                
+=======
+                   <div class="icon-reorder tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+               </div>
+               <!--END SIDEBAR TOGGLE-->
+               <!-- BEGIN LOGO -->
+               <a class="brand" href="#">
+                   <img src="" alt="Dashboard" />
+               </a>
+               <!-- END LOGO -->
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
                <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
                    <span class="icon-bar"></span>
@@ -65,6 +88,7 @@ $p++;
                    </ul>
                </div>
                <!-- END  NOTIFICATION -->
+<<<<<<< HEAD
                   <div class="top-nav ">
                    <ul class="nav pull-right top-menu" >
                        <li class="dropdown">
@@ -72,12 +96,26 @@ $p++;
                                <img src="<?php echo base_url("assets/dashboard/img/avatar.png")?>" alt="">
                                <span class="username"><?php 
                                 echo $profile[0]['fullname'];?>
+=======
+               <div class="top-nav ">
+                   <ul class="nav pull-right top-menu" >
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <img src="img/avatar.png" alt="">
+                               <span class="username"><?php error_reporting(0); echo $profile[0]['fullname'];?>
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                                </span>
                                <b class="caret"></b>
                            </a>
                            <ul class="dropdown-menu extended logout">
+<<<<<<< HEAD
                                <li><a href="<?php $this->load->helper('url'); echo base_url("index.php/users/logout");?>">
                              Logout</a></li>
+=======
+                               <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
+                               <li><a href="#"><i class="icon-cog"></i> My Settings</a></li>
+                               <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                            </ul>
                        </li>
                        <!-- END USER LOGIN DROPDOWN -->
@@ -99,17 +137,25 @@ $p++;
           <ul class="sidebar-menu">
               <li class="sub-menu ">
                   <a class="" href="<?php $this->load->helper('url') ;echo base_url("index.php/users/dashboard"); ?>">
+<<<<<<< HEAD
                       <span>View Your Stocks</span>
                   </a>
               </li>
               <li>
                   <a class="" href="<?php $this->load->helper('url') ;echo base_url("index.php/users/allstocks"); ?>">
                       <span>View All Stocks</span>
+=======
+                      <span>Dashboard</span>
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                   </a>
               </li>
               <li class="active">
                   <a class="active" href="<?php echo base_url("index.php/users/addstock"); ?>">
+<<<<<<< HEAD
                     <span>Your Stocks Settings</span>
+=======
+                    <span>My Stocks</span>
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                   </a>
               </li>
       
@@ -127,6 +173,7 @@ $p++;
          <div class="container-fluid">
             <!-- BEGIN PAGE HEADER-->
                    <h3 class="page-title">
+<<<<<<< HEAD
                      Your Stock Settings
                    </h3>
           </div>
@@ -159,6 +206,35 @@ $p++;
                                     <label class="control-label">Stock Name</label>
                                     <div class="controls">
                                         <select name="stock" type="text" placeholder="company name" class="input-xxlarge">
+=======
+                     My Stocks  | Add Shares you own ...
+                   </h3>
+                   <h2><?php echo $success ?></h2>
+            <h3><?php echo form_error('shares') . form_error('values');  ?></h3>
+    
+                   <!-- END PAGE TITLE & BREADCRUMB-->
+          </div>
+          
+           <div class="row-fluid">
+                <div class="span12">
+                    <!-- BEGIN SAMPLE FORMPORTLET-->
+                    <div class="widget gray">
+                        <div class="widget-title">
+                            <span class="tools">
+                            <a href="javascript:;" class="icon-chevron-down"></a>
+                            <a href="javascript:;" class="icon-remove"></a>
+                            </span>
+                        </div>
+                        <div class="widget-body">
+                            <!-- BEGIN FORM-->
+                              <form <?php echo form_open('users/addstock'); ?> 
+         
+                                <div class="control-group">
+                                    <label class="control-label">Stock Name</label>
+                                    <div class="controls">
+<<<<<<< HEAD
+                                        <select name="stock" type="text" placeholder="stock" class="input-xxlarge">
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                                         <?php $n =0 ;
                                         while($n<count($stocks)){
                                           ?><option value="<?php echo $stocks[$n]?>"><?php echo $stocks[$n]?></option>
@@ -166,6 +242,7 @@ $p++;
                                           $n++;
                                         }?>
                                         </select>
+<<<<<<< HEAD
                                     </div>
                                 </div>
                                   <div class="control-group">
@@ -282,6 +359,44 @@ $p++;
                   Edit stock here
                   </p>
                   </div>
+=======
+                                         <span class="help-inline"><?php echo form_error('stock') ; ?></span>
+=======
+                                        <input type="text" placeholder="stock" class="input-xxlarge"  name ="stock" value="<?php echo set_value('stock'); ?>"/>
+                                        <span class="help-inline"><?php echo form_error('stock') ; ?></span>
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
+                                    </div>
+                                </div>
+                                 <div class="control-group">
+                                    <label class="control-label">Shares</label>
+                                    <div class="controls">
+                                        <input type="text" placeholder="shares" class="input-xxlarge" name ="shares" value="<?php echo set_value('shares'); ?>"/>
+                                        <span class="help-inline"><?php echo form_error('shares') ; ?></span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Value</label>
+                                    <div class="controls">
+                                        <input type="text" placeholder="values" class="input-xxlarge" name ="value" value="<?php echo set_value('value'); ?>"/>
+                                        <span class="help-inline"><?php echo form_error('value');  ?></span>
+                                    </div>
+                                </div>
+                               
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn success">Add Stock</button>
+                                    <button type="button" class="btn"><i class=" icon-remove"></i> Cancel</button>
+                                </div>
+                            </form>
+                            <!-- END FORM-->
+                        </div>
+                    </div>
+                    <!-- END SAMPLE FORM PORTLET-->
+                </div>
+            </div>
+                        </div>
+                    </div>
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
                     <!-- END SAMPLE FORM PORTLET-->
                 </div>
             </div>
@@ -293,9 +408,12 @@ $p++;
       <!-- END PAGE -->
    </div>
    <!-- END CONTAINER -->
+<<<<<<< HEAD
 <div id="footer">
        2013 - <?php echo date("Y"); ?> &copy; <a href ="<?php echo base_url() ?>">Track Your Shares</a>
    </div>
+=======
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
 
    <!-- BEGIN FOOTER -->
                             <!-- END FORM-->
@@ -329,6 +447,7 @@ $p++;
    <script src="<?php echo base_url("assets/dashboard/js/sparkline-chart.js")?>"></script>
    <script src="<?php echo base_url("assets/dashboard/js/home-page-calender.js")?>"></script>
    <script src="<?php echo base_url("assets/dashboard/js/home-chartjs.js")?>"></script>
+<<<<<<< HEAD
    <script type="text/javascript">
     $(document).ready(function() {
     	$('#no_shares').val('');
@@ -493,6 +612,8 @@ $p++;
   
 
   
+=======
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
 
 </body>
 <!-- END BODY -->

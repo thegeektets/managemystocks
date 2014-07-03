@@ -12,6 +12,10 @@ class Welcome extends CI_Controller {
     $data['pchange'] = $this -> pchange();
     $data['high'] = $this -> high();
     $data['low'] = $this -> low();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
 		$this->load->view('index' ,$data);
 	}
 
@@ -39,6 +43,15 @@ class Welcome extends CI_Controller {
       
     }
   }
+<<<<<<< HEAD
+=======
+=======
+		$this->load->view('home' ,$data);
+	}
+
+
+>>>>>>> 9ea66badcafd97a4fd74d1f6b8c83aba999c23dc
+>>>>>>> 003851d247588c98d492e0028ced1373cb9d95da
 public function scrape() 
 {
        $ch = curl_init();
