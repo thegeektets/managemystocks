@@ -1,0 +1,44 @@
+[06-Feb-2014 14:21:00 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:40:48 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:57:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:57:47 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:57:51 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:58:02 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:58:46 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:58:51 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 14:59:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:00:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:01:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:02:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:02:15 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:03:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:04:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:05:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:06:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:06:24 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:07:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:07:37 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:07:48 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:08:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:09:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:10:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:10:13 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:11:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:11:34 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:12:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '=' in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:13:07 Africa/Nairobi] PHP Fatal error:  Call to undefined function length() in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:14:06 Africa/Nairobi] PHP Fatal error:  Call to undefined function length() in /home/trackyou/public_html/application/controllers/users.php on line 68
+[06-Feb-2014 15:51:49 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[06-Feb-2014 15:52:04 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[06-Feb-2014 15:52:36 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[06-Feb-2014 15:52:37 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 14:17:41 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 15:55:38 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 15:55:56 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 15:56:10 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 15:56:30 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 15:56:43 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 16:47:02 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[10-Feb-2014 16:59:09 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[11-Feb-2014 09:57:01 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16
+[11-Feb-2014 09:57:11 Africa/Nairobi] PHP Fatal error:  Call to undefined method users_model::get_stocks() in /home/trackyou/public_html/application/controllers/users.php on line 16

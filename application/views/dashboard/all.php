@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<?php error_reporting(0); ?>
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+   <meta charset="utf-8" />
+   <title>View All Stocks | Track Your Shares</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+    <link href="<?php $this->load->helper('url'); echo base_url("assets/dashboard/assets/bootstrap/css/bootstrap.min.css")?>" rel="stylesheet" />
+   <link href="<?php echo base_url("assets/dashboard/assets/bootstrap/css/bootstrap-responsive.min.css")?>" rel="stylesheet" />
+   <link href="<?php echo base_url("assets/dashboard/assets/bootstrap/css/bootstrap-fileupload.css")?>" rel="stylesheet" />
+   <link href="<?php echo base_url("assets/dashboard/assets/font-awesome/css/font-awesome.css")?>" rel="stylesheet" />
+   <link href="<?php echo base_url("assets/dashboard/css/style.css")?>" rel="stylesheet" />
+   <link href="<?php echo base_url("assets/dashboard/css/style-responsive.css")?>" rel="stylesheet" />
+   <link href="<?php echo base_url("assets/dashboard/css/style-default.css")?>" rel="stylesheet" id="style_color" />
+   <link href="<?php echo base_url("assets/dashboard/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css")?>" rel="stylesheet" />
+   <link href="<?php echo base_url("assets/dashboard/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css")?>" rel="stylesheet" type="text/css" media="screen"/>
+ <link rel="shortcut icon" href="<?php echo base_url("assets/blue/images/favicon.ico")?>">
+   
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+   <!-- BEGIN HEADER -->
+   <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+       <!-- BEGIN TOP NAVIGATION BAR -->
+       <div class="navbar-inner">
+           <div class="container-fluid">
+               <!--BEGIN SIDEBAR TOGGLE-->
+               <div class="sidebar-toggle-box hidden-phone">
+                   <div  data-placement="right" data-original-title="Toggle Navigation"></div>
+               </div>
+               <!--END SIDEBAR TOGGLE-->
+              
+               <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+               <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="arrow"></span>
+               </a>
+               <!-- END RESPONSIVE MENU TOGGLER -->
+               <div id="top_menu" class="nav notify-row">
+                   <!-- BEGIN NOTIFICATION -->
+                   <ul class="nav top-menu">
+                       <!-- BEGIN SETTINGS -->
+              
+                   </ul>
+               </div>
+               <!-- END  NOTIFICATION -->
+                  <div class="top-nav ">
+                   <ul class="nav pull-right top-menu" >
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <img src="<?php echo base_url("assets/dashboard/img/avatar.png")?>" alt="">
+                               <span class="username"><?php 
+                                echo $profile[0]['fullname'];?>
+                               </span>
+                               <b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu extended logout">
+                               <li><a href="<?php $this->load->helper('url'); echo base_url("index.php/users/logout");?>">
+                             Logout</a></li>
+                           </ul>
+                       </li>
+                       <!-- END USER LOGIN DROPDOWN -->
+                   </ul>
+                   <!-- END TOP NAVIGATION MENU -->
+               </div>
+           </div>
+       </div>
+       <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <!-- BEGIN CONTAINER -->
+   <div id="container" class="row-fluid">
+      <!-- BEGIN SIDEBAR -->
+      <div class="sidebar-scroll">
+        <div id="sidebar" class="nav-collapse collapse">
+
+         <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+         <div class="navbar-inverse">
+            <form class="navbar-search visible-phone">
+               <input type="text" class="search-query" placeholder="Search" />
+            </form>
+         </div>
+         <!-- END RESPONSIVE QUICK SEARCH FORM -->
+         <!-- BEGIN SIDEBAR MENU -->
+         <ul class="sidebar-menu">
+              <li>
+                  <a class="" href="<?php $this->load->helper('url') ;echo base_url("index.php/users/dashboard"); ?>">
+                      <span>View Your Stocks</span>
+                  </a>
+              </li>
+              <li  class="active">
+                  <a class="" href="<?php $this->load->helper('url') ;echo base_url("index.php/users/allstocks"); ?>">
+                      <span>View All Stocks</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="" href="<?php echo base_url("index.php/users/addstock"); ?>">
+                    <span>Your Stock Settings</span>
+                  </a>
+              </li>
+      
+              <li>
+                  <a class="" href="<?php echo base_url("index.php/users/logout"); ?>">
+                    <span>Logout</span>
+                  </a>
+              </li>
+          </ul>
+         <!-- END SIDEBAR MENU -->
+      </div>
+      </div>
+      <!-- END SIDEBAR -->
+      <!-- BEGIN PAGE -->  
+      <div id="main-content">
+         <!-- BEGIN PAGE CONTAINER-->
+         <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->   
+            <div class="row-fluid">
+               <div class="span12">
+                   <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                   <h3 class="page-title">
+                     View All Stocks
+                   </h3>
+                   <ul class="breadcrumb">
+                       <li class="active" id="promptbox">
+                           All the shares :NSE Market State :<?php 
+                           date_default_timezone_set('Africa/Nairobi');
+                           $date = date('m/d/Y h:i:s a', time());
+                           echo $date; ?>
+                       </li>
+                       <li class="pull-right search-wrap">
+                           <form action="" class="hidden-phone">
+                               <div class="input-append search-input-area">
+                                   <input class="" id="appendedInputButton" type="text">
+                                   <button class="btn" type="button" id="searchbtn"><i class="icon-search"></i> </button>
+                               </div>
+                           </form>
+                       </li>
+                   </ul>
+                   <!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+            <?php 
+
+           	for($n=0 ;$n<count($stocks);$n++){
+        
+               ?>
+               <div class="row-fluid">
+           
+		         <div class="metro-nav">
+                    <div class="metro-nav-block nav-light-blue double">
+                        <a data-original-title="" href="#">
+                               <div class="info"><?php echo $stocks[$n] ?> </div>
+                            <div class="status">Stock</div>
+                        </a>
+                    </div>
+                     <div class="metro-nav-block nav-block-grey ">
+                        <a data-original-title="" href="#">
+                            <div class="info"><?php echo $yesterday[$n] ?></div>
+                            <div class="status">Yesterday</div>
+                        </a>
+                    </div>
+                     <div class="metro-nav-block nav-block-grey ">
+                        <a data-original-title="" href="#">
+                            <div class="info"><?php echo $today[$n] ?></div>
+                            <div class="status">Today</div>
+                        </a>
+                    </div>
+                    <div class="metro-nav-block nav-block-blue ">
+                        <a data-original-title="" href="#">
+                            <div class="info"><?php echo $high[$n] ?></div>
+                            <div class="status">High</div>
+                        </a>
+                    </div>
+                     <div class="metro-nav-block nav-block-blue ">
+                        <a data-original-title="" href="#">
+                            <div class="info"><?php echo $low[$n] ?></div>
+                            <div class="status">Low</div>
+                        </a>
+                    </div>
+                    
+                     
+</div>
+</div>
+
+                    <?php
+   	}
+	?>
+        
+
+               <div class="space10"></div>
+                <!--END METRO STATES-->
+            </div>
+                </div>
+            </div>
+
+            <!-- END PAGE CONTENT-->         
+         </div>
+         <!-- END PAGE CONTAINER-->
+      </div>
+      <!-- END PAGE -->  
+   </div>
+   <!-- END CONTAINER -->
+
+   <!-- BEGIN FOOTER -->
+   <div id="footer">
+       2013 - <?php echo date("Y"); ?> &copy; <a href ="<?php echo base_url() ?>">Track Your Shares</a>
+   </div>
+
+   <!-- END FOOTER -->
+
+   <!-- BEGIN JAVASCRIPTS -->
+   <!-- Load javascripts at bottom, this will reduce page load time -->
+   <script src="<?php echo base_url("assets/dashboard/js/jquery-1.8.3.min.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/js/jquery.nicescroll.js")?>" type="text/javascript"></script>
+   <script type="text/javascript" src="<?php echo base_url("assets/dashboard/assets/jquery-slimscroll/jquery-ui-1.9.2.custom.min.js")?>"></script>
+   <script type="text/javascript" src="<?php echo base_url("assets/dashboard/assets/jquery-slimscroll/jquery.slimscroll.min.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/assets/fullcalendar/fullcalendar/fullcalendar.min.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/assets/bootstrap/js/bootstrap.min.js")?>"></script>
+
+   <!-- ie8 fixes -->
+   <!--[if lt IE 9]>
+   <script src="<?php echo base_url("assets/dashboard/js/excanvas.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/js/respond.js")?>"></script>
+   <![endif]-->
+
+   <script src="<?php echo base_url("assets/dashboard/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js")?>" type="text/javascript"></script>
+   <script src="<?php echo base_url("assets/dashboard/js/jquery.sparkline.js")?>" type="text/javascript"></script>
+   <script src="<?php echo base_url("assets/dashboard/assets/chart-master/Chart.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/js/jquery.scrollTo.min.js")?>"></script>
+
+
+   <!--common script for all pages-->
+   <script src="<?php echo base_url("assets/dashboard/js/common-scripts.js")?>"></script>
+
+   <!--script for this page only-->
+
+   <script src="<?php echo base_url("assets/dashboard/js/easy-pie-chart.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/js/sparkline-chart.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/js/home-page-calender.js")?>"></script>
+   <script src="<?php echo base_url("assets/dashboard/js/home-chartjs.js")?>"></script>
+   
+   <script type="text/javascript">
+    $(document).ready(function(){
+    $("#searchbtn").click(function(){
+
+        var filter = $("#appendedInputButton").val(), count=0;
+ 
+        
+        $(".metro-nav").each(function(){
+ 
+           
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+       if(count == 0){
+       		$("#promptbox").text("Your search matches no records.");
+       }
+ 
+    });
+});
+	</script>
+
+   <!-- END JAVASCRIPTS -->   
+</body>
+<!-- END BODY -->
+</html>
